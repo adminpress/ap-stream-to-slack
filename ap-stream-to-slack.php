@@ -3,7 +3,7 @@
  * Plugin Name: AP Stream to Slack
  * Plugin URI: https://wordpress.org/plugins/ap-stream-to-slack/
  * Description: Send Stream logs to slack.
- * Author: f.staude
+ * Author: f.staude, stk_jj
  * Version: 0.0.4
  * Author URI: https://staude.net/
  * Text Domain: ap-stream-to-slack
