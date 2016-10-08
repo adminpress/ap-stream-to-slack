@@ -14,6 +14,7 @@ Send your Stream records to Rocket.Chat.
 [Stream](https://wordpress.org/plugins/stream/) records activity on your WordPress site in your WordPress database.
 This plugin allows you to also send those records to [Rocket.chat](https://rocket.chat/).
 
+You can configure the message with macros.
 
 Based on [Stream to Papertrail](https://wordpress.org/plugins/stream-to-papertrail/)
 
