@@ -4,7 +4,7 @@
  * Plugin URI: https://wordpress.org/plugins/ap-stream-to-slack/
  * Description: Send Stream logs to slack.
  * Author: f.staude
- * Version: 0.0.3
+ * Version: 0.0.4
  * Author URI: https://staude.net/
  * Text Domain: ap-stream-to-slack
  * Domain Path: /languages
