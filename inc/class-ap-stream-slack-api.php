@@ -107,12 +107,26 @@ class AP_Stream_Slack_API {
 							         '%user_login%' => $user->user_login,
 								  ) ) );
 
-		$data = array(
-				'channel'      => $this->options['ap-slack_channel'],
-				'username'     => $this->options['ap-slack_username'],
-				'text'         => $messagesend,
-				'icon_emoji'   => $this->options['ap-slack_icon_emoji'],
-			);
+        $channel = '';
+        $username = '';
+        $icon_emoji = '';
+        if ( array_key_exists( 'ap-slack_channel', $this->options ) ) {
+            $channel = $this->options['ap-slack_channel'];
+        }
+        if ( array_key_exists( 'ap-slack_username', $this->options ) ) {
+            $username = $this->options['ap-slack_username'];
+        }
+        if ( array_key_exists( 'ap-slack_icon_emoji', $this->options ) ) {
+            $icon_emoji = $this->options['ap-slack_icon_emoji'];
+        }
+
+        $data = array(
+            'channel'      => $channel,
+            'username'     => $username,
+            'text'         => $messagesend,
+            'icon_emoji'   => $icon_emoji,
+        );
+
 		$data_string = utf8_encode( json_encode($data));
 
 		wp_remote_post($url, array(
